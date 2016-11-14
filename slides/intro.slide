@@ -1,0 +1,82 @@
+Going Kuber-nuts with Docker
+
+A brief introduction to the Kubernetes container management system
+15 November 2016
+
+Alex Ninneman
+@ninnemana
+
+* Docker
+
+Docker is a tool used to create and run linux containers. Linux containers wrap
+a piece of software in a complete filesystem that contains everything needed
+to run:
+
+- Code
+- Runtime
+- System Tools
+- System Libraries
+- etc.
+
+* Where does Docker fall short?
+
+Docker is great for managing images and running containers on a specific
+host.
+
+- Can't manage containers across multiple nodes.
+- Works best when under manual configuration of host
+
+* Other Services for Managing Docker
+
+In theory you could roll some of these together and create your own
+solution:
+
+- Fleet (schedule/orchestrate jobs and cluster manager)
+- Geard (schedule/orchestrate jobs)
+- Marathon (schedule/orchestrate jobs)
+- Apache Mesos (cluster manager)
+
+* Why Kubernetes?
+
+- Designed to make working with containers on GCE easier
+- Available for anyone and need not run on GCE
+- Packages all tools (orchestration, service discovery, load balancing) into one package
+- Written in Go (I'm sold)
+
+* Kubernetes Components
+
+- Cluster
+: Cluster - a set of physcial or virtual machines and other resources used by Kubernetes
+- Node
+: Node - a physical or virtual machine running Kubernetes, onto which pods can be scheduled.
+- Pod
+: Pod - a co-located group of containers and volumes
+- Label
+: Label - a key/value pair that is attached to a resource as an identifying attribute, typically used to organize resources.
+- Selector
+: Selector - an expression that matches labels to identify related resources.
+- Replication Controller
+: Replication Controller - ensures that a specified number of pod replicas are running at one time
+- Service
+: Service - defines a set of pods and a means by which to access them, such as an IP or corresponding DNS entry.
+- Volume
+: Volume - a directory, possibly with some data in it.
+- Secret
+: Secret - a base64 encoded key/value pair, typically used for storing sensitive information.
+
+* Kubernetes as a Service
+
+Google Container Engine
+Elastic Container Service
+Azure Container Service Engine
+
+* Companies Contributing to Kubernetes
+
+- Google
+- Red Hat
+- Box
+- CoreOS
+- Canonical
+- VMWare
+
+* Demo
