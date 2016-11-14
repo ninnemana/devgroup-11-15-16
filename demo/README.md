@@ -27,6 +27,26 @@ A demo CRUD application in golang using the popular gin-gonic framework
   ```
 5. [godep](https://github.com/tools/godep) is used for dependency management. So if you add or remove deps, make sure you run `godep save` before pushing code. Refer to its documentation for more info on how to use it.
 
+## Running in Docker
+
+Start a MongoDB instance
+
+```sh
+$ docker run -itd -p 27017 --name mongo-database -d mongo
+```
+
+Build the application
+
+```sh
+$ docker build -t kubernetes-demo:latest .
+```
+
+Run the application
+
+```sh
+$ docker run --rm -p 8080:8080 -p 27017:27017 -e "MONGODB_URL=mongodb://mongo-database:27017/articles_demo_dev" --link mongo-database:mongo-database kubernetes-demo --name demo
+```
+
 ## Usage
 
 ```sh
