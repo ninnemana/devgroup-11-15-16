@@ -6,6 +6,7 @@ A brief introduction to the Kubernetes container management system
 Alex Ninneman
 @ninnemana
 
+
 * Docker
 
 Docker is a tool used to create and run linux containers. Linux containers wrap
@@ -18,6 +19,7 @@ to run:
 - System Libraries
 - etc.
 
+
 * Where does Docker fall short?
 
 Docker is great for managing images and running containers on a specific
@@ -25,6 +27,7 @@ host.
 
 - Can't manage containers across multiple nodes.
 - Works best when under manual configuration of host
+
 
 * Other Services for Managing Docker
 
@@ -36,12 +39,14 @@ solution:
 - Marathon (schedule/orchestrate jobs)
 - Apache Mesos (cluster manager)
 
+
 * Why Kubernetes?
 
 - Designed to make working with containers on GCE easier
 - Available for anyone and need not run on GCE
 - Packages all tools (orchestration, service discovery, load balancing) into one package
 - Written in Go (I'm sold)
+
 
 * Kubernetes Components
 
@@ -64,11 +69,13 @@ solution:
 - Secret
 : Secret - a base64 encoded key/value pair, typically used for storing sensitive information.
 
+
 * Kubernetes as a Service
 
 Google Container Engine
 Elastic Container Service
 Azure Container Service Engine
+
 
 * Companies Contributing to Kubernetes
 
@@ -78,5 +85,6 @@ Azure Container Service Engine
 - CoreOS
 - Canonical
 - VMWare
+
 
 * Demo
