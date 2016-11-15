@@ -1,5 +1,16 @@
 #!/bin/sh
 
+# Clean-up from a possible previous run
+kubectl delete -f mongo_deployment.yml
+kubectl delete -f mongo_service.yml
+kubectl delete -f app_deployment.yml
+kubectl delete -f app_service.yml
+
+gcloud compute disks delete -q \
+	--project "ninneman-cvdev" \
+	--zone "us-central1-a" \
+	mongo-disk
+
 gcloud compute disks create \
 	--project "ninneman-cvdev" \
 	--zone "us-central1-a" \
@@ -10,7 +21,7 @@ gcloud compute disks create \
 echo "Creating MongoDB deployment/service"
 kubectl create -f mongo_deployment.yml
 kubectl create -f mongo_service.yml
-kubectl get svc,deployment
+kubectl get svc,rc
 
 # Setup the Application
 # First, we build the docker image
@@ -27,4 +38,4 @@ echo "Creating application deployment/service"
 kubectl create -f app_deployment.yml
 kubectl create -f app_service.yml
 
-kubectl get svc,deployment
+kubectl get svc,deployment,rc
