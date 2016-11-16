@@ -6,10 +6,10 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ninnemana/devgroup-11-15-16/demo/db"
-	"github.com/ninnemana/devgroup-11-15-16/demo/gin_html_render"
-	"github.com/ninnemana/devgroup-11-15-16/demo/handlers/articles"
-	"github.com/ninnemana/devgroup-11-15-16/demo/middlewares"
+	"github.com/ninnemana/devgroup-11-15-16/demo/app/db"
+	"github.com/ninnemana/devgroup-11-15-16/demo/app/gin_html_render"
+	"github.com/ninnemana/devgroup-11-15-16/demo/app/handlers/articles"
+	"github.com/ninnemana/devgroup-11-15-16/demo/app/middlewares"
 )
 
 const (

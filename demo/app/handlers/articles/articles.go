@@ -8,7 +8,7 @@ import (
 	"gopkg.in/mgo.v2/bson"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ninnemana/devgroup-11-15-16/demo/models"
+	"github.com/ninnemana/devgroup-11-15-16/demo/app/models"
 )
 
 // New article
