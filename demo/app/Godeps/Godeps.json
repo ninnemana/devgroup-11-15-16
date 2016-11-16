@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/ninnemana/devgroup-11-15-16/demo",
+	"ImportPath": "github.com/ninnemana/devgroup-11-15-16/demo/app",
 	"GoVersion": "go1.7.1",
 	"GodepVersion": "v75",
 	"Deps": [
