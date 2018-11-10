@@ -121,19 +121,31 @@ solution:
 
 * Kubernetes as a Service
 
-Google Container Engine
-Elastic Container Service
-Azure Container Service Engine
+.link https://cloud.google.com/kubernetes-engine/ Google Kubernetes Engine
+.link https://aws.amazon.com/eks/ Elastic Container Service
+.link https://azure.microsoft.com/en-us/services/kubernetes-service/ Azure Container Service Engine
+.link https://www.digitalocean.com/docs/kubernetes/overview/ Digital Ocean
 
+
+* Why is managed so important?
+
+Utilizing a managed instance of Kubernetes allows developers to easily utilize other features from Cloud Providers
+that makes monitoring, observing, and gathering performance metrics easier.
+
+- Logging
+- Metrics
+- Tracing
+- Managed data storage solutions
 
 * Companies Contributing to Kubernetes
 
 - Google
-- Red Hat
+- RedHat
 - Box
 - CoreOS
 - Canonical
 - VMWare
+- Microsoft
 
 
 * Scale our Registry
