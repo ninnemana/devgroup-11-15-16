@@ -1,11 +1,50 @@
-Going Kuber-nuts with Docker
+Developing Scalable Infrastructure on a Budget
 
-A brief introduction to the Kubernetes container management system
-15 November 2016
+10 November 2018
 
 Alex Ninneman
 @ninnemana
 github.com/ninnemana
+
+* Topics
+
+- Docker
+- Container Registry
+- Kubernetes
+
+* Quote Service
+
+Web application that allows for quotes to be submitted containing an author and a quote.
+
+- List quote submitted
+- Allow quotes to be added
+
+.code ../static/quote.json
+
+* Golang Quote Registry
+
+Web application written in Golang and utilizes a MySQL instance for storing data.
+.link http://github.com/ninnemana/cvcc-go-app
+.image https://image.ibb.co/duesDV/Screen-Shot-2018-11-09-at-22-32-57.png 650 900
+
+* NodeJS Quote Registry
+
+Web application written in NodeJS and utilizes a MongoDB instance for storing data.
+.link http://github.com/ninnemana/cvcc-node-app
+.image https://image.ibb.co/hcBxDV/Screen-Shot-2018-11-09-at-22-49-39.png 650 900
+
+* Prerequisites
+
+Install Golang
+
+.link https://dl.google.com/go/go1.11.2.windows-amd64.msi Windows Installer
+.link https://dl.google.com/go/go1.11.2.darwin-amd64.pkg MacOS Installer
+
+Install NodeJS
+
+.link https://nodejs.org/dist/v10.13.0/node-v10.13.0-x64.msi Windows Installer
+.link https://nodejs.org/dist/v10.13.0/node-v10.13.0.pkg MacOS Installer
+
 
 * Docker
 
@@ -19,6 +58,16 @@ to run:
 - System Libraries
 - etc.
 
+* Installing Docker for Local Development
+
+Docker for Mac/Windows is a pre-packaged installer that includes the Docker daemon and allows a Kubernetes cluster to be created on a local machine.
+
+.link https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe Docker for Windows
+.link https://download.docker.com/mac/stable/Docker.dmg Docker for Mac
+
+* Let's Run the Apps
+
+.image https://i.imgflip.com/mi1ql.jpg
 
 * Where does Docker fall short?
 

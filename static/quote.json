@@ -1,0 +1,13 @@
+{
+	// unique identifier (system generated)
+	id: "226b99f1-a9cb-47a9-8d10-c603a9b7038f",
+
+	// equired by the user
+	author: "Mark Twain",
+
+	// required by the user
+	quote: "The report of my death was an exaggeration.",
+	
+	// UNIX timestamp for when the quote was submitted
+	created: 1257894000
+}
