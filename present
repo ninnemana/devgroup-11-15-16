@@ -1,0 +1,24 @@
+#!/bin/bash
+
+PRESENT_OPTS="-http=0.0.0.0:3999"
+
+if [ ! -z $HTTP ]; then
+	PRESENT_OPTS="-http=$HTTP"
+fi
+
+if [ ! -z $ORIGIN_HOST ]; then
+	PRESENT_OPTS="$PRESENT_OPTS -orighost $ORIGIN_HOST"
+fi
+
+if [ ! -z $BASE ]; then
+	PRESENT_OPTS="$PRESENT_OPTS -base /app/$BASE"
+fi
+
+if [ ! -z $CONTENT ]; then
+	PRESENT_OPTS="$PRESENT_OPTS -content /app/$CONTENT"
+fi
+
+echo $PRESENT_OPTS
+echo $HTTP
+
+present $PRESENT_OPTS
