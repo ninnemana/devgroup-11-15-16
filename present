@@ -18,7 +18,4 @@ if [ ! -z $CONTENT ]; then
 	PRESENT_OPTS="$PRESENT_OPTS -content /app/$CONTENT"
 fi
 
-echo $PRESENT_OPTS
-echo $HTTP
-
 present $PRESENT_OPTS
